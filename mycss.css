@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 15px 0;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: #feb47b;
+}
+
+.content {
+  background: white;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 1.5s ease-in;
+}
+
+h1, h2, h3 {
+  color: #ff7e5f;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #d4570e;
+  color: white;
+}
+
+/* Form Styling */
+form {
+  margin-top: 20px;
+}
+
+input[type="text"], input[type="submit"], textarea {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background: #ff7e5f;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #feb47b;
+}
+
+/* Image Styling */
+img {
+  width: 200px;
+  height: 154px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.travel-image {
+  cursor: crosshair;
+  width: 500px;
+  height: 350px;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
